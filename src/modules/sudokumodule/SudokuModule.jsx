@@ -121,7 +121,7 @@ const SudokuModule = ({ gameMode, gameDifficulty, currentPage, setCurrentPage })
     useEffect(() => {
         const fetchSudokuData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/sudoku', {
+                const response = await fetch('https://replit.com/@huseyinsalmanso/sudokuapp-backend/sudoku', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
