@@ -13,14 +13,16 @@ const App = () => {
   const pages = [
     <SelectGameModePage setGameMode={setGameMode} currentPage={currentPage} setCurrentPage={setCurrentPage} />,
     <SelectGameDifficultyPage setGameDifficulty={setGameDifficulty} currentPage={currentPage} setCurrentPage={setCurrentPage} />,
-    <SudokuGamePage gameMode={gameMode} gameDifficulty={gameDifficulty} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+    <SudokuGamePage gameMode={gameMode} gameDifficulty={gameDifficulty} currentPage={currentPage} setCurrentPage={setCurrentPage} />
   ];
 
   return (
-    <div className="App w-full h-full">
-      {
-        pages[currentPage]
-      }
+    <div className="App w-full h-full md:flex md:justify-center md:items-center">
+      <div className="AppContainer w-full md:w-1/3 h-full">
+        {
+          pages[currentPage]
+        }
+      </div>
     </div>
   )
 }
