@@ -10,7 +10,7 @@
 
 ## Demo
 
-You can find the deployed version of the Sudoku App: [DEMO](sudokuapp.onrender.com)
+You can find the deployed version of the Sudoku App: [DEMO](www.sudokuapp.onrender.com)
 
 ## Contact
 
